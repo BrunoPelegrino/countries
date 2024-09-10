@@ -1,0 +1,99 @@
+// src/styles/main.scss
+
+// Variáveis de cores
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #343a40;
+
+// Estilos globais
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: $primary-color;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// Estilos para o CountryList
+.country-list {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      margin: 10px 0;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Estilos para o CountryInfo
+.country-info {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .border-countries {
+    margin-top: 20px;
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      
+      li {
+        margin: 5px 0;
+        
+        a {
+          text-decoration: none;
+          color: $primary-color;
+          font-weight: bold;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .chart-container {
+    margin-top: 20px;
+  }
+}
